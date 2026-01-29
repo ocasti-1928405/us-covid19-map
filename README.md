@@ -3,8 +3,8 @@
 # Project Introduction
 This project is a detailing of covid-19 cases and rates using JSON data placed onto choropleth/proportional symbols maps.
 ## Live Maps
-* [Map 1: COVID-19 Rates (Choropleth)](map1.html)
-* [Map 2: COVID-19 Cases (Proportional Symbols)](map2.html)
+* [Map 1: COVID-19 Rates (Choropleth)](https://ocasti-1928405.github.io/us-covid19-map/map1.html)
+* [Map 2: COVID-19 Cases (Proportional Symbols)](https://ocasti-1928405.github.io/us-covid19-map/map2.html)
 
 ## Screenshots
 * Map 1:
