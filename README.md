@@ -13,7 +13,7 @@ This project is a detailing of covid-19 cases and rates using JSON data placed o
 
 * Map 2:
 
-![Map 2](img\Map 2, US Covid-19 Cases (2020).png)
+![Map 2](img\Map 2, US Covid-19 Cases (2020))
 
 
 ## Primary Functions
