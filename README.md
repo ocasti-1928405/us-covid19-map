@@ -1,5 +1,7 @@
 # us-covid19-map Web Map
 
+I used AI in this assignment for code method explanations and suggestions of minor adjustments. I did not use AI to write or complete components where AI use is prohibited. In the case where AI was used, I am able to explain my reasoning and process.
+
 # Project Introduction
 This project is a detailing of covid-19 cases and rates using JSON data placed onto choropleth/proportional symbols maps.
 ## Live Maps
