@@ -12,7 +12,8 @@
         map.on('load', () => {
             map.addSource('covid-rates', {
                 type: 'geojson',
-                data: 'assets/us-covid-2020-rates.geojson'
+                data: 'assets/us-covid-2020-rates.json'
+
             });
 
             map.addLayer({
@@ -44,4 +45,55 @@
                     'fill-opacity': 0.7,
                 }
             });
+
+        
+const layers = [
+    '0-9',
+    '10-19',
+    '20-49',
+    '50-99',
+    '100-199',
+    '200-499',
+    '500-999',
+    '1000+'
+];
+const colors = [
+    '#FFEDA070',
+    '#FED97670',
+    '#FEB24C70',
+    '#FD8D3C70',
+    '#FC4E2A70',
+    '#E31A1C70',
+    '#BD002670',
+    '#80002670'
+];
+
+const legend = document.getElementById('legend');
+legend.innerHTML = "<b>Traffic Rate<br>(per 1k)</b><br><br>";
+
+layers.forEach((layer, i) => {
+    const color = colors[i];
+    const item = document.createElement('div');
+    const key = document.createElement('span');
+    key.className = 'legend-key';
+    key.style.backgroundColor = color;
+    key.style.display = 'inline-block';
+    key.style.width = '10px';
+    key.style.height = '10px';
+    key.style.marginRight = '5px';
+
+    const value = document.createElement('span');
+    value.innerHTML = `${layer}`;
+    
+    item.appendChild(key);
+    item.appendChild(value);
+    legend.appendChild(item);
+});
+
+const source = document.createElement('div');
+source.style.textAlign = 'right';
+source.style.fontSize = '10pt';
+source.style.marginTop = '10px';
+source.innerHTML = 'Source: <a href="https://github.com/nytimes/covid-19-data">NY Times</a>';
+legend.appendChild(source);
         });

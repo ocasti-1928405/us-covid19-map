@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+mapboxgl.accessToken = 'pk.eyJ1Ijoib2Nhc3RpIiwiYSI6ImNtaGJlcHR0bzBkbHEyam9hZjUxdTN2em8ifQ.1dlbHGkcsfz7UDrymlleLA';
 
 let map = new mapboxgl.Map({
     container: 'map', 
@@ -16,7 +16,7 @@ const grades = [1000, 10000, 100000],
 map.on('load', () => {
     map.addSource('covid-counts', {
         type: 'geojson',
-        data: 'assets/us-covid-2020-counts.geojson'
+        data: 'assets/us-covid-2020-counts.json'
     });
 
     map.addLayer({
